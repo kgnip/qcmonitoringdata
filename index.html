@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QC DATA MONITORING</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .menu-button {
+            display: block;
+            background: linear-gradient(45deg, #1e8449, #145a32);
+            color: white;
+            padding: 14px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        .menu-button:hover {
+            background: linear-gradient(45deg, #145a32, #0e4023);
+        }
+
+        .submenu {
+            display: none;
+            flex-direction: column;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .submenu a {
+            display: block;
+            background: linear-gradient(45deg, #58d68d, #2ecc71);
+            color: white;
+            padding: 8px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        .submenu a:hover {
+            background: linear-gradient(45deg, #2ecc71, #27ae60);
+        }
+
+        .dashboard-button {
+            background: linear-gradient(45deg, #2874a6, #1b4f72);
+        }
+
+        .dashboard-button:hover {
+            background: linear-gradient(45deg, #1b4f72, #154360);
+        }
+
+        .dashboard-submenu a {
+            background: linear-gradient(45deg, #85c1e9, #5dade2);
+        }
+
+        .dashboard-submenu a:hover {
+            background: linear-gradient(45deg, #5dade2, #2e86c1);
+        }
+    </style>
+    <script>
+        function toggleSubMenu(id) {
+            let submenu = document.getElementById(id);
+            if (submenu.style.display === "flex") {
+                submenu.style.display = "none";
+            } else {
+                submenu.style.display = "flex";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">QC Data Monitoring</div>
+        <div class="menu">
+            <div class="menu-button" onclick="toggleSubMenu('formInput')">Form Input</div>
+            <div class="submenu" id="formInput">
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJ3l5WtzXTYXqDXlN253E8wUPJlMPqvt8yebI1WxT4kz7Mog/viewform">Form Fiskim Produk Jadi</a>
+                <a href="https://forms.gle/example2">Form 2</a>
+                <a href="https://forms.gle/example3">Form 3</a>
+                <a href="https://forms.gle/example4">Form 4</a>
+                <a href="https://forms.gle/example5">Form 5</a>
+                <a href="https://forms.gle/example6">Form 6</a>
+                <a href="https://forms.gle/example7">Form 7</a>
+                <a href="https://forms.gle/example8">Form 8</a>
+                <a href="https://forms.gle/example9">Form 9</a>
+                <a href="https://forms.gle/example10">Form 10</a>
+            </div>
+            <div class="menu-button dashboard-button" onclick="toggleSubMenu('dashboardMonitoring')">Dashboard Monitoring</div>
+            <div class="submenu dashboard-submenu" id="dashboardMonitoring">
+                <a href="https://lookerstudio.google.com/reporting/61212f91-5fc6-45a7-a9e4-fc7d8c65fd95">Dashboard Fiskim Produk Jadi</a>
+                <a href="#">Dashboard 2</a>
+                <a href="#">Dashboard 3</a>
+                <a href="#">Dashboard 4</a>
+                <a href="#">Dashboard 5</a>
+                <a href="#">Dashboard 6</a>
+                <a href="#">Dashboard 7</a>
+                <a href="#">Dashboard 8</a>
+                <a href="#">Dashboard 9</a>
+                <a href="#">Dashboard 10</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
